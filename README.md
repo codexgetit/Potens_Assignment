@@ -155,3 +155,8 @@ Distributed under the MIT License. See `LICENSE` for more details.
 ## ✍️ Author
 *   **Dashrath Bogati**
 *   Email: dashrathbogati907@gmail.com
+
+
+
+/////////////////AI Usage:Used Chatgpt for structure of the code , mostly I used AI as a development assistant throughout the project It helped me brainstorm ideas, understand concepts, debug issues, improve React components, and refine the UI.
+I used antigravity for the code optimization .
