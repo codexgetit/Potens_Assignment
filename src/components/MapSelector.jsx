@@ -33,7 +33,7 @@ export const MapSelector = () => {
         {
           headers: {
             'Accept-Language': 'en',
-            'User-Agent': 'CivicCare-Report-Portal'
+            'User-Agent': 'Describe-Issue-Report-Portal'
           }
         }
       );

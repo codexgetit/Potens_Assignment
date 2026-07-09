@@ -75,10 +75,10 @@ export const DetailsPage = () => {
       {/* Header and selected category info */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
         <div>
-          <h2 className="font-display text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+          <h2 className="font-display text-xl sm:text-2xl font-black text-[#0288d1] dark:text-[#4fc3f7]">
             {t('details.title')}
           </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
+          <p className="text-xs text-[#0288d1]/85 dark:text-[#4fc3f7]/85 font-semibold mt-0.5">
             {t('details.subtitle')}
           </p>
         </div>
@@ -118,7 +118,7 @@ export const DetailsPage = () => {
           {/* Text Description Box */}
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <label htmlFor="desc-box" className="block text-sm font-bold text-slate-700 dark:text-slate-350">
+              <label htmlFor="desc-box" className="block text-sm font-bold text-[#0288d1] dark:text-[#4fc3f7]">
                 {t('details.description')} <span className="text-rose-500">*</span>
               </label>
               <span className={`text-[10px] font-bold ${draft.description.trim().length >= 10 ? 'text-slate-400' : 'text-rose-550'}`}>
@@ -132,7 +132,7 @@ export const DetailsPage = () => {
               value={draft.description}
               onChange={handleDescChange}
               placeholder={t('details.descriptionPlaceholder')}
-              className={`w-full px-4 py-3 rounded-2xl border text-sm font-medium transition duration-200 outline-none focus:ring-3 focus:ring-indigo-100 bg-white dark:bg-slate-905 dark:text-slate-200
+              className={`w-full px-4 py-3 rounded-2xl border text-sm font-medium text-black transition duration-200 outline-none focus:ring-3 focus:ring-indigo-100 bg-white dark:bg-slate-905
                 ${errors.description 
                   ? 'border-rose-500 focus:ring-rose-50 dark:focus:ring-rose-950/20' 
                   : 'border-slate-200 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-500'
@@ -158,7 +158,7 @@ export const DetailsPage = () => {
 
           {/* Contact Details Fields */}
           <div className="border-t border-slate-100 dark:border-slate-800/80 pt-5 space-y-4">
-            <h4 className="text-sm font-bold text-slate-800 dark:text-slate-250 flex items-center gap-1.5">
+            <h4 className="text-sm font-bold text-[#0288d1] dark:text-[#4fc3f7] flex items-center gap-1.5">
               <svg className="h-4.5 w-4.5 text-indigo-650" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
@@ -168,7 +168,7 @@ export const DetailsPage = () => {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {/* Name Field */}
               <div className="space-y-1.5">
-                <label htmlFor="reporter-name" className="block text-xs font-bold text-slate-500 dark:text-slate-450">
+                <label htmlFor="reporter-name" className="block text-xs font-bold text-[#0288d1]/85 dark:text-[#4fc3f7]/85">
                   {t('details.reporterName')}
                 </label>
                 <input
@@ -177,13 +177,13 @@ export const DetailsPage = () => {
                   value={draft.reporterName}
                   onChange={(e) => updateDraft({ reporterName: e.target.value })}
                   placeholder="e.g. John Doe"
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold transition bg-white dark:bg-slate-905 dark:text-slate-200 outline-none focus:ring-3 focus:ring-indigo-100 focus:border-indigo-500"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold text-black transition bg-white dark:bg-slate-905 outline-none focus:ring-3 focus:ring-indigo-100 focus:border-indigo-500"
                 />
               </div>
 
               {/* Phone Field */}
               <div className="space-y-1.5">
-                <label htmlFor="reporter-phone" className="block text-xs font-bold text-slate-500 dark:text-slate-450">
+                <label htmlFor="reporter-phone" className="block text-xs font-bold text-[#0288d1]/85 dark:text-[#4fc3f7]/85">
                   {t('details.reporterPhone')}
                 </label>
                 <input
@@ -195,7 +195,7 @@ export const DetailsPage = () => {
                     if (errors.phone) setErrors(prev => ({ ...prev, phone: null }));
                   }}
                   placeholder="e.g. 9876543210"
-                  className={`w-full px-4 py-2.5 rounded-xl border text-sm font-semibold transition bg-white dark:bg-slate-905 dark:text-slate-200 outline-none focus:ring-3 focus:ring-indigo-100
+                  className={`w-full px-4 py-2.5 rounded-xl border text-sm font-semibold text-black transition bg-white dark:bg-slate-905 outline-none focus:ring-3 focus:ring-indigo-100
                     ${errors.phone 
                       ? 'border-rose-500 focus:ring-rose-50 dark:focus:ring-rose-950/20' 
                       : 'border-slate-200 dark:border-slate-800 focus:border-indigo-500'

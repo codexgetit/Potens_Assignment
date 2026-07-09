@@ -7,10 +7,10 @@ export const registerSW = () => {
       // sw.js is located in the public root folder
       navigator.serviceWorker.register('/sw.js')
         .then((registration) => {
-          console.log('CivicCare Service Worker registered with scope:', registration.scope);
+          console.log('Describe Issue Service Worker registered with scope:', registration.scope);
         })
         .catch((error) => {
-          console.error('CivicCare Service Worker registration failed:', error);
+          console.error('Describe Issue Service Worker registration failed:', error);
         });
     });
   }

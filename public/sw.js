@@ -1,7 +1,7 @@
 /**
- * Service Worker for CivicCare PWA offline support.
+ * Service Worker for Describe Issue PWA offline support.
  */
-const CACHE_NAME = 'potens-civiccare-v1';
+const CACHE_NAME = 'potens-describe-issue-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
