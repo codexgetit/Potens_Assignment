@@ -1,0 +1,93 @@
+/* Keyframe animations for loading, recording waves, and cards */
+
+@keyframes wave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Helper Animation Classes */
+.animate-slide-up {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-success-pop {
+  animation: successPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Delay modifiers */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+/* Stepper transition styling */
+.step-transition {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Audio waveform bar heights and speeds */
+.wave-bar {
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  margin: 0 2px;
+  background-color: var(--color-brand-500);
+  border-radius: 2px;
+  animation: wave 1.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.wave-bar:nth-child(2) { animation-delay: 0.1s; height: 32px; }
+.wave-bar:nth-child(3) { animation-delay: 0.2s; height: 16px; }
+.wave-bar:nth-child(4) { animation-delay: 0.3s; height: 28px; }
+.wave-bar:nth-child(5) { animation-delay: 0.4s; height: 20px; }
+.wave-bar:nth-child(6) { animation-delay: 0.5s; height: 36px; }
+.wave-bar:nth-child(7) { animation-delay: 0.6s; height: 14px; }
+.wave-bar:nth-child(8) { animation-delay: 0.7s; height: 26px; }

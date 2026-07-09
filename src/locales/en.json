@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "title": "CivicCare",
+    "subtitle": "Citizen Issue Portal",
+    "history": "My Reports",
+    "historyTitle": "Submitted Reports History"
+  },
+  "stepper": {
+    "step1": "Category",
+    "step2": "Details",
+    "step3": "Success"
+  },
+  "category": {
+    "title": "Select Issue Category",
+    "subtitle": "Choose the category that best describes the issue you want to report.",
+    "pothole": "Potholes & Roads",
+    "potholeDesc": "Damaged roads, potholes, or street cave-ins.",
+    "garbage": "Garbage & Sanitation",
+    "garbageDesc": "Overflowing bins, uncollected waste, or littering.",
+    "streetlight": "Streetlights",
+    "streetlightDesc": "Broken streetlights or dark zones on public roads.",
+    "water": "Water Leakage",
+    "waterDesc": "Burst pipes, open sewers, or water wastage.",
+    "traffic": "Traffic & Parking",
+    "trafficDesc": "Blocked roads, illegal parking, or signal issues.",
+    "safety": "Public Safety",
+    "safetyDesc": "Hazardous structures, open manholes, or safety concerns.",
+    "other": "Other Issues",
+    "otherDesc": "Any other civic problem not listed above."
+  },
+  "details": {
+    "title": "Report Details",
+    "subtitle": "Provide as much detail as possible. You can use voice recording or type directly.",
+    "selectedCategory": "Selected Category",
+    "description": "Issue Description",
+    "descriptionPlaceholder": "Describe the issue in detail (e.g. location, landmark, severity, duration)...",
+    "voiceRecord": "Voice Recording",
+    "voiceHelper": "Click the microphone to speak your issue description in English or Hindi.",
+    "voiceStop": "Stop Recording",
+    "voiceListening": "Listening... Speak now",
+    "voiceReady": "Record Description",
+    "voiceUnsupported": "Speech recognition is not supported in this browser.",
+    "imageUpload": "Upload Issue Photo",
+    "imageHelper": "Drag and drop or click to upload a photo of the issue.",
+    "compressing": "Compressing image...",
+    "reporterDetails": "Reporter Details (Optional)",
+    "reporterName": "Your Name",
+    "reporterPhone": "Your Phone Number",
+    "submit": "Submit Report",
+    "back": "Back"
+  },
+  "confirmation": {
+    "success": "Report Submitted Successfully!",
+    "message": "Thank you for reporting this issue. The municipal department has been notified.",
+    "refCardTitle": "OFFICIAL COMPLAINT RECEIPT",
+    "refNumber": "Reference ID",
+    "dateReported": "Date Reported",
+    "status": "Current Status",
+    "statusPending": "PENDING INVESTIGATION",
+    "download": "Download Receipt",
+    "copy": "Copy Reference ID",
+    "copied": "Copied!",
+    "newReport": "Report Another Issue"
+  },
+  "history": {
+    "empty": "You haven't submitted any reports yet.",
+    "close": "Close"
+  },
+  "validation": {
+    "descRequired": "Description is required.",
+    "descTooShort": "Description must be at least 10 characters long.",
+    "categoryRequired": "Please select a category first.",
+    "phoneInvalid": "Please enter a valid 10-digit phone number."
+  }
+}
