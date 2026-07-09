@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * A premium, reusable Button component.
  */
@@ -17,7 +15,7 @@ export const Button = ({
   id
 }) => {
   // Styles for different variants
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 cursor-pointer select-none focus:outline-none focus:ring-3 focus:ring-indigo-200 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 cursor-pointer select-none focus:outline-none focus:ring-3 focus:ring-[#95ccdd]/60 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100';
   
   const sizeStyles = {
     sm: 'px-3 py-1.5 text-xs',
@@ -26,11 +24,11 @@ export const Button = ({
   };
 
   const variantStyles = {
-    primary: 'bg-[#0f2e46] text-white hover:bg-[#1a56db] shadow-md shadow-slate-100 dark:shadow-none hover:shadow-lg',
-    secondary: 'bg-slate-100 text-slate-800 hover:bg-slate-250 dark:bg-slate-850 dark:text-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800',
-    accent: 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-md shadow-emerald-100 dark:shadow-none hover:shadow-lg',
-    outline: 'bg-transparent border border-[#0f2e46] text-[#0f2e46] hover:bg-slate-50 dark:text-indigo-400 dark:border-indigo-500 dark:hover:bg-indigo-950/20',
-    danger: 'bg-rose-600 text-white hover:bg-rose-700 shadow-md shadow-rose-100 dark:shadow-none hover:shadow-lg',
+    primary: 'bg-[#4274d9] text-white hover:bg-[#293681] shadow-md shadow-[#95ccdd]/50 hover:shadow-lg',
+    secondary: 'bg-[#d0e7e6] text-[#1f275f] hover:bg-[#95ccdd]/40 border border-[#95ccdd]',
+    accent: 'bg-[#293681] text-white hover:bg-[#1f275f] shadow-md shadow-[#95ccdd]/40 hover:shadow-lg',
+    outline: 'bg-transparent border border-[#4274d9] text-[#4274d9] hover:bg-[#eef6f8]',
+    danger: 'bg-[#293681] text-white hover:bg-[#1f275f] shadow-md shadow-[#95ccdd]/40 hover:shadow-lg',
     text: 'bg-transparent text-slate-600 hover:bg-slate-50 dark:text-slate-400 dark:hover:bg-slate-900/50'
   };
 

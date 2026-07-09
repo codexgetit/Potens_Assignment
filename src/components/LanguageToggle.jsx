@@ -43,8 +43,8 @@ export const LanguageToggle = () => {
               }}
               className={`w-full text-left px-4 py-2.5 text-xs font-bold transition cursor-pointer ${
                 language === 'en'
-                  ? 'bg-blue-50 text-[#0288d1]'
-                  : 'text-slate-700 hover:bg-slate-50'
+                  ? 'bg-brand-100 text-brand-600'
+                  : 'text-slate-700 hover:bg-brand-50'
               }`}
             >
               English
@@ -56,8 +56,8 @@ export const LanguageToggle = () => {
               }}
               className={`w-full text-left px-4 py-2.5 text-xs font-bold transition cursor-pointer ${
                 language === 'hi'
-                  ? 'bg-blue-50 text-[#0288d1]'
-                  : 'text-slate-700 hover:bg-slate-50'
+                  ? 'bg-brand-100 text-brand-600'
+                  : 'text-slate-700 hover:bg-brand-50'
               }`}
             >
               हिंदी

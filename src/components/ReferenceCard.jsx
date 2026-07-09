@@ -42,7 +42,7 @@ export const ReferenceCard = ({ draft }) => {
           {/* Ticket Header */}
           <div className="border-b-2 border-slate-100 dark:border-slate-800/80 pb-4 flex items-center justify-between gap-4">
             <div>
-              <span className="text-[10px] font-extrabold tracking-widest text-indigo-600 uppercase">
+              <span className="text-[10px] font-extrabold tracking-widest text-[#293681] uppercase">
                 {t('confirmation.refCardTitle')}
               </span>
               <h3 className="font-mono text-sm font-black text-slate-850 dark:text-white mt-1">
@@ -64,7 +64,7 @@ export const ReferenceCard = ({ draft }) => {
                 {t('details.selectedCategory')}
               </span>
               <div className="flex items-center gap-2">
-                <span className={`inline-flex items-center justify-center w-6 h-6 rounded-lg bg-gradient-to-br ${catInfo.colorClass || 'from-indigo-500 to-indigo-700'} text-white shadow-xs`}>
+                <span className={`inline-flex items-center justify-center w-6 h-6 rounded-lg bg-gradient-to-br ${catInfo.colorClass || 'from-[#4274d9] to-[#293681]'} text-white shadow-xs`}>
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d={catInfo.svgPath || ''} />
                   </svg>
@@ -155,7 +155,7 @@ export const ReferenceCard = ({ draft }) => {
         {/* Copy Reference Button */}
         <button
           onClick={handleCopy}
-          className="flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 text-slate-750 dark:text-slate-250 font-bold text-xs bg-white dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-850 hover:shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-[0.98]"
+          className="flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 text-[#1f275f] dark:text-slate-250 font-bold text-xs bg-white dark:bg-slate-900/60 hover:bg-[#eef6f8] dark:hover:bg-slate-850 hover:shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-[0.98]"
         >
           {copied ? (
             <>
@@ -177,7 +177,7 @@ export const ReferenceCard = ({ draft }) => {
         {/* Print Receipt Button */}
         <button
           onClick={handlePrint}
-          className="flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 text-slate-755 dark:text-slate-250 font-bold text-xs bg-white dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-850 hover:shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-[0.98]"
+          className="flex-1 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 text-[#1f275f] dark:text-slate-250 font-bold text-xs bg-white dark:bg-slate-900/60 hover:bg-[#eef6f8] dark:hover:bg-slate-850 hover:shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-[0.98]"
         >
           <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-3a2 2 0 00-2-2H9a2 2 0 00-2 2v3a2 2 0 002 2zm5-14V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M9 3h6" />

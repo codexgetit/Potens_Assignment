@@ -17,9 +17,9 @@ export const MapSelector = () => {
   const mapRef = useRef(null);
   const markerRef = useRef(null);
   
-  // Default coordinates (New Delhi)
-  const defaultLat = 28.6139;
-  const defaultLng = 77.2090;
+  // Default coordinates (Pune)
+  const defaultLat = 18.5204;
+  const defaultLng = 73.8567;
 
   const [address, setAddress] = useState(draft.location || 'Loading default location...');
   const [isLoadingAddress, setIsLoadingAddress] = useState(false);
@@ -120,7 +120,7 @@ export const MapSelector = () => {
           </span>
         </div>
         {isLoadingAddress && (
-          <div className="h-4 w-4 border-2 border-[#0288d1] border-t-transparent rounded-full animate-spin shrink-0" />
+          <div className="h-4 w-4 border-2 border-[#4274d9] border-t-transparent rounded-full animate-spin shrink-0" />
         )}
       </div>
 

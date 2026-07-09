@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { ReportContext } from '../contexts/ReportContext';
 import HomePage from '../pages/HomePage';
 import DetailsPage from '../pages/DetailsPage';
@@ -14,6 +14,7 @@ import LanguageToggle from '../components/LanguageToggle';
  */
 export const AppRoutes = () => {
   const { currentStep, setStep } = useContext(ReportContext);
+  const navbarBgClass = 'bg-brand-600';
 
   // Homepage renders everything itself (no external Navbar)
   if (currentStep === 0) {
@@ -23,8 +24,8 @@ export const AppRoutes = () => {
   // Wizard pages get a simple header + stepper + content
   return (
     <>
-      <header className="bg-[#0288d1] text-white shadow-md sticky top-0 z-40">
-        <div className="mx-auto flex h-[60px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header className={`${navbarBgClass} text-white shadow-md sticky top-0 z-40`}>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" style={{ height: '60px' }}>
           <div className="flex items-center gap-2 cursor-pointer bg-white/95 px-3 py-1.5 rounded-lg shadow-xs" onClick={() => setStep(0)}>
             <img src="/logoDescribeIssue1.png" alt="Describe Issue Logo" className="h-[28px] object-contain" />
           </div>
@@ -32,8 +33,8 @@ export const AppRoutes = () => {
         </div>
       </header>
 
-      <div className="flex flex-col min-h-[calc(100vh-60px)] bg-[#f5f8fb]">
-        <div className="bg-white border-b border-slate-200 shrink-0">
+      <div className="flex flex-col bg-brand-50" style={{ minHeight: 'calc(100vh - 60px)' }}>
+        <div className="bg-brand-50 border-b border-brand-100 shrink-0">
           <ProgressStepper currentStep={currentStep} />
         </div>
         <main className="flex-1 pb-12">
